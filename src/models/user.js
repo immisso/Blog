@@ -2,7 +2,7 @@
  * @Author: 柒叶
  * @Date: 2019-09-08 13:18:56
  * @Last Modified by: 柒叶
- * @Last Modified time: 2019-10-21 17:06:09
+ * @Last Modified time: 2019-10-21 17:46:02
  */
 import {
   postGetLogin,
@@ -36,7 +36,6 @@ export default {
       };
     },
     saveUser(state, { payload }) {
-      console.log(payload)
       return {
         ...state,
         user: payload.user,

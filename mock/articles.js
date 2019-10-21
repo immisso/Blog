@@ -581,6 +581,83 @@ const articleList = [{
   view_num: 379
 },
 ]
+const comments = 
+
+  {
+    '10000':[
+      {
+        article_id: '10000',
+        comment_id: 1,
+        content: "喜欢！",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/007.png",
+          nickname: "路人甲",
+          user_id: '003',
+        }
+      },
+      {
+        article_id: '10000',
+        comment_id: 1,
+        content: "不错不错😁",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/003.png",
+          nickname: "路人艺",
+          user_id: '002',
+        }
+      },
+    ],
+    '10001':[
+      {
+        article_id: '10001',
+        comment_id: 1,
+        content: "很喜欢这篇文章哦！",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/001.png",
+          nickname: "路人兵",
+          user_id: '004',
+        }
+      },
+      {
+        article_id: '10001',
+        comment_id: 1,
+        content: "不错不错😸",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/005.png",
+          nickname: "路人丁",
+          user_id: '000',
+        }
+      },
+    ],
+    '10003':[
+      {
+        article_id: '10003',
+        comment_id: 1,
+        content: "写的太好了！",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/006.png",
+          nickname: "路人勿",
+          user_id: '008',
+        }
+      },
+      {
+        article_id: '10003',
+        comment_id: 1,
+        content: "不错不错哦！👻",
+        create_time: "2019-10-21 17:27:28",
+        user: {
+          avatar: "https://immisso.oss-cn-hangzhou.aliyuncs.com/avatar/004.png",
+          nickname: "路人庚",
+          user_id: '005',
+        }
+      },
+    ]
+  }
+
 const getArticles = (req, res) => {
   res.json({
     data:articleList
@@ -650,4 +727,8 @@ export default {
     const { articleId } = req.query;
     return res.json(articleList.find(value =>value.article_id===articleId))
   },
+  'GET /api/article/comment/list': (req, res) => {
+    const { articleId } = req.query;
+    return res.json(comments[articleId])
+  }
 }

@@ -2,16 +2,14 @@
  * @Author: 柒叶
  * @Date: 2019-09-14 09:34:20
  * @Last Modified by: 柒叶
- * @Last Modified time: 2019-10-21 17:10:23
+ * @Last Modified time: 2019-10-21 17:37:12
  */
 
 import {
   getArticleList,
   getArticleDetail,
-  postArticleLike,
   postArticleComment,
   getArticleComment,
-  getIsLike,
   getHotArticle,
   getCategory,
 } from '@/services/article';
@@ -94,7 +92,7 @@ export default {
     commentListHandle(state, { payload }) {
       return {
         ...state,
-        comments: [...payload.data],
+        comments: [...payload],
       };
     },
     hotHandle(state, { payload }) {

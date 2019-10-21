@@ -2,7 +2,7 @@
  * @Author: 柒叶
  * @Date: 2019-09-08 21:45:31
  * @Last Modified by: 柒叶
- * @Last Modified time: 2019-10-21 17:05:48
+ * @Last Modified time: 2019-10-21 17:45:56
  */
 
 import React, { Component } from 'react';
@@ -34,9 +34,6 @@ class MainHeader extends Component {
     const { dispatch } = this.props;
     const userInfos = storageHelper.get('web_user');
     const expireTime = storageHelper.get('expire');
-    console.log('000000000eeeeeeeeeeeeeeeeeee')
-    console.log(userInfos);
-    console.log(expireTime);
     if (userInfos && moment() < moment(expireTime.expire)) {
       dispatch({
         type: 'user/saveUser',
