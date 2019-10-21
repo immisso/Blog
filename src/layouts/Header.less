@@ -1,0 +1,64 @@
+// .main-header{
+//     background: #ffffff;
+// }
+
+
+
+.ant-layout-header {
+    position: relative;
+    background: #ffffff;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    z-index: 11;
+    // padding: 0 1rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
+    .main-header-left {
+        display: flex;
+    }
+    .main-header-right{
+        display: flex;
+        align-items: center;
+    }
+    .brand {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        white-space: nowrap;
+        svg {
+            fill:rgb(0, 123, 255);
+
+        }
+    }
+    .ant-menu {
+        font-family: inherit;
+        line-height: inherit;
+        box-shadow: none;
+        display: inline-block;
+        border: 0;
+        margin-bottom: 1px;
+        a {
+            color: #000000a6
+        }
+      }
+      .ant-menu-item,
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        padding: 0 1rem;
+      }
+      .ant-menu-item,
+      .ant-menu-submenu {
+        top: 2px;
+      }
+}
+
+
+@media (max-width:480px) {
+    .main-header-right{
+       display: none !important
+    }
+}

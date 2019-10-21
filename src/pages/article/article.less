@@ -1,0 +1,38 @@
+.article-panel{
+  position: fixed;
+  width: 40px;
+  height: 200px;
+  top:16rem;
+  margin-left: -4rem;
+  .article-panel-item{
+    display: flex;
+    // background: red;
+    flex-flow: column;
+    width:40px;
+    margin-bottom:20px;
+    align-items: center;
+    .article-panel-icon {
+      margin-bottom: 5px;
+      width:38px;
+      height: 38px;
+      background: #ffffff;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:hover{
+        outline-color:#cccccc;
+      }
+    }
+    .article-panel-count{
+      color: #cccccc
+    }
+  }
+}
+
+.ant-list-items .ant-list-item-action{
+  margin-top: 5px !important
+}
+  
