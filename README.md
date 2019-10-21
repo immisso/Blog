@@ -37,3 +37,16 @@
 ![](https://immisso.oss-cn-hangzhou.aliyuncs.com/view/blog4.png)
 5.注册
 ![](https://immisso.oss-cn-hangzhou.aliyuncs.com/view/blog5.png)
+
+
+### 技术栈
+该项目采用前后端分离技术。目前[github](https://github.com/immisso/Blog)上暂时只开源了前端部分。服务端采用Python开发，将会在后期陆续开源出来。为了保存网站的完整显示。使用了mock数据。数据来源都是自己[博客网站](https://github.com/immisso/Blog)上的数据。主要功能实现模块包括
++ `react 16.8.6`
++ `antd 3.19.5`
++ `umi 2.7.7`
++ `dva ^2.6.0-beta.6`
++ `marked 0.7.0`
++ `highlight.js 9.15.10`
+
+### 最后
+许多功能会后续逐渐完善，这不仅仅是一个小小的博客网站。也是学习的一个历程。逐渐提高自己的过程。也希望感兴趣的一起来完善它，向一个'大网站'进发。
